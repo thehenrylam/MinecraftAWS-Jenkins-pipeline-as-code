@@ -1,0 +1,13 @@
+pipeline {
+    environment {
+        MESSAGE="Hello World"
+    }
+
+    stages {
+        stage( MESSAGE ) {
+            steps {
+                echo "${MESSAGE}"
+            }
+        }
+    }
+}
