@@ -6,7 +6,9 @@ pipeline {
     stages {
         stage( MESSAGE ) {
             steps {
-                echo "${MESSAGE}"
+                script {
+                    echo "${MESSAGE}"
+                }
             }
         }
     }
